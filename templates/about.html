@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{%block home%}
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">EcoFusion</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="/">Home</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3>About EcoFusion Dev</h3>
+          <p class="left-align light">"Welcome to the GreenCreators developers' corner, where a dedicated and passionate team of individuals has come together with a shared vision – the preservation of our precious environment. Fueled by a deep commitment to sustainable living, we embark on a transformative journey to breathe new life into discarded plastic waste. Through our innovative recycling practices, we meticulously craft eco-friendly furniture that not only enhances your living spaces but also contributes to the greater cause of reducing environmental impact. Join us on this meaningful expedition as we strive to redefine the possibilities of recycling, one recycled plastic piece at a time."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- First Card -->
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='img/damr.jpg') }}">
+            <span class="card-title">Damar</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Card (similar structure) -->
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='img/ari.jpg') }}">
+            <span class="card-title">Ariandi</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Card (similar structure) -->
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='img/ari.jpg') }}">
+            <span class="card-title">Daffa</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Card (similar structure) -->
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ url_for('static', filename='img/ari.jpg') }}">
+            <span class="card-title">Rugan</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%endblock%}
+
+
+
+
+
+
+<div class="card">
+  <div class="card-image waves-effect waves-block waves-light">
+    <img class="activator" src="images/office.jpg">
+  </div>
+  <div class="card-content">
+    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+    <p><a href="#">This is a link</a></p>
+  </div>
+  <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+  </div>
+</div>
